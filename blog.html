@@ -18,7 +18,7 @@ permalink: /blog
 {% for post in site.posts %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
-  <p class="post-date"><h3>{{ post.date | date: "%Y" }}<sub>&nbsp;{{ post.date | date: "%m-%d" }}&nbsp;<sub>{{ post.time | date: "%H:%M" }}</sub></sub></h3></p>
+  <h3>{{ post.date | date: "%Y" }}<sub>&nbsp;{{ post.date | date: "%m-%d" }}&nbsp;<sub>{{ post.time | date: "%H:%M" }}</sub></sub></h3>
   <p>
     {{ post.subtitle }}
     <!-- {{ post.content | strip_html | truncatewords: 50 }} -->
